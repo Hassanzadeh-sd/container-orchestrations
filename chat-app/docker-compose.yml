@@ -1,0 +1,22 @@
+version: '3.6'
+
+services:
+  db:
+    image: mongo:4.0
+    expose:
+      - 27017
+    command: --smallfiles
+    networks:
+      - chat-app
+  web:
+    image: hassanzadeh/github:chat-app
+    restart: on-failure
+    ports:
+      - "5000:5000" 
+    depends_on:
+      - db
+    networks:
+      - chat-app
+
+networks:
+  chat-app:
