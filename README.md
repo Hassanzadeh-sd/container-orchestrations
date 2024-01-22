@@ -7,7 +7,7 @@
 
 # Container Orchestration Options
 
-- [Docker Swarm](docker-swarm/docker-swarm-cheatsheet.md)
+- [Docker Swarm](swarm/docker-swarm-cheatsheet.md)
 - [Kubernetes](kubernetes/README.md)
 - [Mesos Marathon](mesos/README.md)
 - Cloud Foundry Diego
